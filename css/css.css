@@ -1,0 +1,371 @@
+*{
+	padding: 0px;
+	margin: 0px;
+    box-sizing:b
+}
+body{
+	background-color: #ffffff;
+    box-sizing: border-box;
+}
+.contenedor{
+    width:100%;
+    align-items:center; 
+	box-sizing: border-box;
+}
+
+header{
+    width:100%;
+    height:60px;
+    color: #f9f5f5;
+    align-items: center;
+    border: #C2B9B9;
+    box-sizing: border-box;
+}
+#btn-menu{
+display:none;
+
+}
+
+.header label{
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+    padding:40px;
+   }
+.menu ul{
+    background-color:#f9f5f5;
+    display:flex;
+    list-style: none; 
+    text-align:center; 
+}
+.menu a{
+    display:block;
+    padding: 13px 18px; 
+    color:#ffffff; 
+    text-decoration: none; // quita el subrallado
+    box-sizing: border-box;
+}
+.menu a:hover{ background-color: rgba(0,0,0,0.2); /*al pasar el cursor cambia el color*/
+}
+img{
+    width:6%;
+    height:60px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    }
+
+.aside{
+    width:100%;
+    height:630px;
+    color:#ffffff;
+    background:url(../img/compi.jpg); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-attachment: fixed;
+    padding: 0px;
+    align-items:left;
+    display:block; 
+    float:left; 
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%);
+    clip-path: polygon(0% 0%,100% 0%, 100% 80%, 0% 60%);
+    box-sizing:border-box;    
+}
+
+.aside:before {
+    content:"";
+    width:100%;
+    height:730px;
+    background-color:#2c236b; 
+    position: absolute; /*importante para poder ver el color sobre la imagen*/
+    opacity: 0.6;
+     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%);
+clip-path: polygon(0% 0%,100% 0%, 100% 80%, 0% 60%);
+ z-index: 1px
+ float:left;
+    box-sizing: border-box;  
+}
+
+.frase{
+    width:40%;
+    height:100px;
+    color:#ffffff;
+    background-color:transparent;
+    position:relative;
+    align-items:center;
+    margin-bottom:0px;
+    margin-left: 400px;
+    margin-top:50px;  
+    float:center; 
+    box-sizing:border-box;    
+}
+
+
+#btn-menu:checked ~ .menu{
+        transform: translateX(0%); /*para que aparesca el menu*/
+        
+    }
+
+
+.menu a span{
+     margin-left: 10px;
+     color:  white;
+}
+section{
+    padding:10px;
+    border: 1px solid #707070;
+    border-color: #707070;
+    width:20%;
+    height:40px;
+    margin-top: 200px;
+    margin-left: 500px;
+    position:relative;
+    text-align: center;
+    align-items:center;
+    background-color:#F31CB3; 
+    opacity: 0.8;
+    z-index: 1;
+    box-sizing: border-box;
+
+}
+section a span{
+    background:#000000;
+    margin-left: 0px;
+    margin-top:0px;
+    z-index: 1;
+    }
+
+.aside1{
+    width:100%;
+    height:880px;
+    float:right;
+    top:-255px;
+    flex-direction: row;
+    position: relative;
+	box-sizing: border-box;
+}
+.aside1:before {
+    content:"";
+    width:100%;
+    height:880px;
+    background-color:#f31cb3;   
+    position: absolute; /*importante para poder ver el color sobre la imagen*/
+    opacity: 0.5;
+     -webkit-clip-path: polygon(0% 0%, 100% 20%, 100% 80%, 0% 80%);
+clip-path: polygon(0% 0%,100% 14%, 100% 80%, 0% 80%);
+    float:left;    
+    box-sizing: border-box;
+}
+
+
+.aside2{
+    width:100%;
+    height:30px;
+    padding:20px; 
+    color: #FBF6F6;
+    float:left;
+    margin-top:120px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+box-sizing: border-box;
+   
+}
+.slider{
+    width:100%;
+    height:400px;
+    padding:0px; 
+    color: #FBF6F6;
+    float:left;
+    margin-top:100px;
+    margin-left:70px;
+    background-size:cover;
+    position:relative;
+    align-content: center;
+    overflow: hidden;/* oculta las imagenes que quedan fuera del marco*/
+    z-index: 1;
+box-sizing: border-box;
+   
+}
+.slider img{
+    width:90%;
+    height:400px;  
+}
+.slider ul{
+    width:499%; 
+    display:flex;
+    padding:0px;
+    animation:cambio 20s infinite alternate;/* para dar animación a las imagenes*/
+    animation-timing-function:step-start;
+    animation-fill-mode: both;
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+@keyframes cambio{
+  0%{margin-left:0; }
+  20%{margin-left:0; }
+
+  25%{margin-left:-100%; }
+  45%{margin-left:-100%; }
+
+  50%{margin-left:-200%; }
+  70%{margin-left:-200%; }
+
+  75%{margin-left:-300%; }
+  95%{margin-left:-300%; }
+
+  100%{margin-left:-400%; }
+  120%{margin-left:-400%; }
+}
+
+
+#footer {
+position: relative;
+/* Altura total del footer en px con valor negativo */
+background:#2C236B;
+opacity: 0.8;
+color:white;
+float:left; 
+width:100%;
+height:50px;
+padding:4px;
+margin-top:-440px;
+margin-left:0%;
+margin-right:0%;
+margin-bottom:0px;
+text-align: center;
+box-sizing:border-box;
+}    
+
+h1{
+    color:#ffffff;
+    font-size: 30px;
+   font-family: Arial;
+}
+h2{
+    color:#ffffff;
+    font-size: 30px;
+    font-family:serif;  
+}
+h3{
+    font-size: 20px;
+    font-family:Times New Roman;
+    color:#ffffff ;
+}
+h4{
+    color:#000000;
+    font-size: 20px;
+    font-family:serif;  
+}
+@media(max-width:768px){  
+    .contenedor{
+       width:100%;
+    }
+
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top:50px;
+        left:0px;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu ul li:hover ul{
+
+    }
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+    #btn-menu:checked ~ .menu{
+        transform: translateX(0%); /*para que aparesca el menu*/
+        
+    }
+
+.aside{
+width:100%;
+height:400px;
+}
+.aside:before {
+    width:50%;
+    height:200px;
+}
+
+.aside1{
+ width:50%;
+ height:400px; 
+  }
+.aside1{
+    width:50%;
+    height:200px;
+	}
+.aside1:before {
+    content:"";
+    width:100%;
+    height:400px;
+		}
+  section{
+    width:70%;
+    height:80px;
+    margin-top:175px;
+        }
+    img{
+    padding:10px;
+    width:30%;
+    height:102px;
+    }
+.aside img{	
+top:165px; 
+    left:37px;	
+}
+    .menu ul li:hover ul{
+        display: none;
+
+    }
+
+.block { width:100%;
+    height:300px;
+    box-sizing:border-box;    
+}
+.aside3{
+    display:none;
+}
+.aside4{
+    width:80%;
+    height:200px;
+    margin-right:10px;
+    padding:1px;
+   margin-top:1px;
+	 box-sizing:border-box;  
+}
+.aside4:before {
+    width:70%;
+    height:200px;
+padding:2px;
+margin-right:25px;
+margin-top:1px:
+	box-sizing:border-box;  
+	}
+h1{
+font-size:8px;
+}
+h2{
+font-size:6px;
+		}
+h3{
+font-size: 6px;
+}
+nav{
+width:100%;
+height:200px;
+}
+}
+	
