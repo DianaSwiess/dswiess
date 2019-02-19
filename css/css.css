@@ -1,7 +1,3 @@
-*{
-	padding: 0px;
-	margin: 0px;
-    box-sizing:border-box;
 }
 body{
 	background-color:#F3B2DE;
@@ -199,7 +195,6 @@ box-sizing: border-box;
 .slider{
     width:100%;
     height:800px;
-    padding:0px; 
     color: #FBF6F6;
     float:left;
     margin-top:25px;
@@ -419,7 +414,7 @@ top:100px;
     width: 100%;
 }
 #footer {
-    margin-top:-20px;
+    margin-top:-50px;
 }
 
 h1{
