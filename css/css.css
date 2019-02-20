@@ -388,9 +388,9 @@ margin-top:110px;
 }
 
   section{
-    width:20%;
+    width:40%;
     height:20px;
-    margin-top:215px;
+    margin-top:245px;
         }
     img{
     padding:10px;
@@ -418,11 +418,11 @@ top:100px;
     width: 100%;
 }
 #footer {
-    margin-top:-60px;
+    margin-top:0px;
 }
 
 h1{
-    font-size: 13px;
+    font-size: 16px;
 }
 
 	
