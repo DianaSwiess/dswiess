@@ -1,0 +1,248 @@
+@media(max-width:768px){  
+    body{
+        font-size:12px;  
+    }
+    header{
+    	width: 100%;
+    height: 100px;
+        text-align: center;  
+    }
+
+    header h1{
+        font-size:17px; 
+    }
+
+
+    header label{
+        display: block;
+        align-items: left;
+    }
+
+     header ul li{
+     list-style: none;
+    }
+    header ul li img{
+     display: none;
+     list-style: none;
+    }
+    
+    header img{
+      display: block;
+      justify-content:flex-end;
+      margin-left: 200px;
+    }
+    .social{
+        width: 100%;
+        float:left;
+        text-align: center;
+        border-top:1px solid #fff;
+        z-index: 2000;
+
+    }
+    .social ul li a{
+        float:left;
+        max-width: 60px;
+
+    }
+    
+    nav{
+        width: 100%;
+    }
+
+    .menu{
+        position: absolute;
+        background:#54E5F8;
+        top:100px;
+        opacity: 0.9;
+        width: 100%;
+        margin-left: 0px;
+        left: 0px;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    
+    .menu ul li:hover ul{
+      display:all;
+        position: static;
+    }
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+    #btn-menu:checked ~ .menu{
+    	margin: 0px;
+        transform: translateX(0%); /*para que aparesca el menu*/
+        
+    }
+    .menu ul ul{
+        background: rgba(0,0,0,0.4);
+    }
+    .menu ul ul a{
+        padding: 15px 40px;
+    }
+    nav .menu h2{
+    	z-index: 100px;
+    }
+
+
+.icon-menu {
+width: 40px;  /* Ancho del icono */
+height: 40px;  /* Alto del icono */
+box-sizing: border-box;
+background:#54E5F8;; /* Fondo del icono */
+border: 1px solid #2BA6DC;  /* Borde del icono */
+position: absolute;
+margin-top: 5px;
+margin-left: 5px;
+box-shadow: inset 0 5px 10px -8px #2BA6DC, 0 2px 3px -1px rgba(0,0,0,.1);  /* Sombras */
+}
+
+    .inicio{
+     width:100%;
+     height:300px;
+     padding: 10px;
+    }
+    .inicio h1{
+        font-size: 20px;
+        margin-top: 100px;
+    	margin-left: 30px;
+    	font-family:"Lato", sans-serif;
+    }
+    .inicio h2{
+    	font-size: 12px;
+    	margin-left:30px;
+    }
+    
+    
+    .about{
+    width:100%;
+    height:550px;
+    
+     }
+     .about h1{
+        font-size:20px;
+        text-indent:0px;
+        text-align: left;
+     
+     }
+     .about h2{
+     	font-size:17px;
+     }
+
+     .about p{
+     	font-size: 17px;
+     }
+    
+    .video{
+    width:100%;
+    height:400px;
+    padding: 0px;
+        }
+    .video iframe{
+     width: 93%;
+     height:300px;
+     margin-left:10px;
+    }
+    .video p{
+        text-align: center;
+    }
+    
+    .active {
+    width:100%;
+    height:300px;
+    padding: 0px;
+}
+     .active:before{
+     	width:100%;
+    height:300px;
+    margin-left: 0px;
+     }
+    .active h1{
+     font-size: 25px;
+}
+.active section{
+    width:35%;
+    height:40px;
+    margin-left:120px;
+    margin-top: 15px;
+    position:relative;
+    color:#fff;
+    border:solid 2px;
+    }
+   
+
+   .active section span h1{
+   	font-size: 10px;
+   font-family:arial;
+   color:#fff;
+
+   } 
+
+   section a h1:hover{color:blue;}
+
+     .hamburguer{
+    width:100%;
+    height:100px;
+}
+ .small{
+    width:95%;
+    height:250px;
+  }
+.small img{
+    width: 100%;
+    height: 200px;
+    margin-left:0px;
+}
+.row{
+    width:100%;
+    height:300px;
+    margin-left:0px;
+}
+.row img{
+margin-left:0px;
+width: 100%;
+height: 200px;
+}
+.group{
+    width:100%;
+    height:300px;
+    margin-left:0px;
+}
+.group img{
+margin-left:-2px;
+width: 100%;
+height: 200px;
+}
+.green{
+    width:100%;
+    height:200px;
+  
+}
+.green section{
+    width:35%;
+    height:40px;
+    margin-left:100px;
+    position:relative;
+    color:black;
+    border:solid 2px;
+    }
+   section h1{
+	font-size: 15px;
+	color: #000000;
+	z-index: 1;
+}
+
+   .green section span a h1{
+   	font-size: 10px;
+    font-family: verdana;
+   }
+    
+img{
+	width: 30%;
+	height:80px;
+    border:#707070;
+    margin-left:5px;
+}

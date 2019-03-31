@@ -6,11 +6,7 @@ body{
 	color:#ffffff;
 
 }
-.contenedor{
-	width: 100%;
-	height: 100%;
-	background:#ffffff;
-}
+
 header{
 	width: 100%;
 	height: 140px;
@@ -28,7 +24,7 @@ header h1{
         color:#000000;
 }
 .social{
-    	position: fixed;
+    	position:fixed;
     	font-size: 20px;
     	display:flex;
     	justify-content:space-around;
@@ -36,6 +32,7 @@ header h1{
     	z-index:1;
     	text-decoration: none;
     	padding:5px;
+        background: transparent;
     	display: flex;
     }
     .social ul{
@@ -63,10 +60,7 @@ header h1{
     	padding:5px;
     	display: flex;
     	}
-    .icon menu{
-        width: 30%;
-        height: 65px;
-    }
+    
      .social ul li .icon-facebook{
     	background: #3F60A5;
     }
@@ -107,15 +101,11 @@ header ul li img{
 	list-style: none;
 }
 
-nav .menu{
-	width: 50%;
-	height: 40px;
-	background: transparent;
-	list-style: none;
-}
+
 #btn-menu{
 display:none;
 }
+
  header label{
  	display: block;
  	width: 30%;
@@ -156,6 +146,7 @@ display:none;
 .menu ul li:hover ul{
     display: block;
     position: absolute;
+
 }
 #btn-menu:checked ~ .menu{
         transform: translateX(0%); /*para que aparesca el menu*/
@@ -192,14 +183,26 @@ display:none;
     	font-family: Arial, Helvetica, sans-serif;
     	color:#ffffff;
     }
+
     .about{
     	width: 50%;
-    	height: 560px;
+    	height: 460px;
     	background:#ffffff;
     	padding: 20px;
     	float:left;
     	justify-content: center;
     	 box-sizing: border-box;
+    }
+    .social1{position: fixed;
+        font-size: 20px;
+        display:flex;
+        justify-content:space-around;
+        margin-left: 1100px;
+        z-index:1;
+        text-decoration: none;
+        padding:5px;
+        display: none;
+    
     }
     .about h1{
     	font-size:30px; 
@@ -238,23 +241,7 @@ display:none;
     	font-size: 15px;
     	font-family: "Comic Sans MS", cursive, sans-serif;
     }
-    .info{
-        width:50%;
-        height:560px;
-        padding: 20px;
-        float:left;
-        justify-content: center;
-        text-align: center;
-        background:#339dc5;
-        box-sizing: border-box;
-    }
-    .info img{
-        width: 70%;
-        height: 350px;
-    }
-    .info h1{
-        color:#000;
-    }
+   
     .active{
     	width: 100%;
     	height: 300px;
@@ -263,12 +250,11 @@ display:none;
     	background-size:cover;
     	background-position: relative;
     	background-attachment: fixed;
-    	display: flex;
-    	padding: 5px;
+    	display:flex;
+    	padding:5px;
     	flex-direction: column;
     	justify-content:center;
-    	text-align: center;
-    	align-items: left;  
+    	text-align:center;  
     	float: left; 
     	box-sizing:border-box;
 
@@ -287,12 +273,13 @@ display:none;
     width:12%;
     height:50px;
     padding:10px;
-    border: 1px solid #ffffff;
+    border:solid .2rem #ffffff;
     border-color: #ffffff;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
     color:#ffffff;
+    margin-top: 20px;
     margin-left:580px;
     position:relative;
     text-align: center;
@@ -304,41 +291,17 @@ display:none;
 }
 section h1{
 	font-size: 15px;
-	color: #ffffff;
+	color: blue;
 	z-index: 1;
 }
-     .contacto{
-        width: 100%;
-        height: 600px;
-        padding: 20px;
-        background:#3F60A5;
-        display: grid;
-        grid-auto-columns: auto;
-        grid-template-rows: auto;
-        box-sizing: border-box;
 
-     }
-     .contacto img{
-        width: 60%;
-        height: 400px;
-        margin-left: 300px;
-        float:left;
-     }
-     .contacto h1{
-      color:#000;
-      font-size: 30px;
-      text-align: center;
-     }
-     .contacto h2{
-        color:#000;
-        font-size:20px;
-        text-align:center;
-        font-family:verdana;
-     }
+span a h1:hover{
+    color:#F8CF2A;
+}
 
     .hamburguer{
     	width: 100%;
-    	height: 60px;
+    	height: 80px;
     	background-color:#ffffff;
     	color:#000000;
     	text-align: center;
@@ -350,67 +313,69 @@ section h1{
     .hamburguer h1{
     	color:#000000;
     }
-    article{
-    	width: 30%;
-    	height: 300px;
-    	padding: 20px;
-    	text-align: center;
+    
+    .small{
+        width: 30%;
+        height: 300px;
+        padding: 10px;
+        text-align: center;
         margin-left:0px;
-    	align-content:center;
-    	float: left;
+        align-content:center;
+        float: left;
     }
-    article img{
-    	width: 100%;
-    	height:200px; 
-    	margin:5px;
+    .small img{
+        width: 100%;
+        height:200px; 
+        margin:5px;
         box-sizing:border-box;
     }
-    article h1{
-    	color:#000000;
-    	font-family: Arial, Helvetica, sans-serif;
-    	font-size: 20px;
+    .small h1{
+        color:#000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
     }
     
     .row{
-    	width: 33%;
-    	height: 300px;
-    	padding: 20px;
-    	margin-left:5px;
-    	text-align: center;
-    	float: left;
-    	box-sizing:border-box;
+        width: 33%;
+        height: 300px;
+        padding: 10px;
+        margin-left:5px;
+        text-align: center;
+        float: left;
+        box-sizing:border-box;
     }
     .row img{
-    	width: 100%;
-    	height: 200px;
-    	margin:5px;
+        width: 100%;
+        height: 200px;
+        margin:5px;
         box-sizing:border-box;
     }
     .row h1{
-    	color:#000000;
-    	font-family: Arial, Helvetica, sans-serif;
-    	font-size: 20px;
+        color:#000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
     }
-   .group{
-    	width: 33%;
-    	height: 300px;
-    	padding: 20px;
-    	margin-left:5px;
-    	text-align: center;
-    	float: left;
-    	box-sizing:border-box;
+    .group{
+        width: 33%;
+        height: 300px;
+        padding: 10px;
+        margin-left:5px;
+        text-align: center;
+        float: left;
+        box-sizing:border-box;
     }
     .group img{
-    	width: 100%;
-    	height: 200px;
-    	margin:5px;
+        width: 100%;
+        height: 200px;
+        margin:5px;
         box-sizing:border-box;
     }
     .group h1{
-    	color:#000000;
-    	font-family: Arial, Helvetica, sans-serif;
-    	font-size: 20px;
+        color:#000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
     }
+    
     .green{
     	width: 100%;
     	height: 200px;
@@ -422,16 +387,17 @@ section h1{
     	box-sizing: border-box;
     }
     .green h1{
-    	font-size:30px; 
+      font-size:30px; 
       font-family:Arial, Helvetica, sans-serif;
-      color: #000000;
+      color:blue;
       z-index: 1;
           }
+
     .green section{
     width:8%;
     height:50px;
     padding:10px;
-    border: 1px solid #000000;
+    border:solid 2px #000000;
     border-color: #000000;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -447,7 +413,7 @@ section h1{
     box-sizing: border-box;
 
 }
-   .green section span h1{
+   .green section span a h1{
    	font-size: 15px;
    }
     
@@ -463,296 +429,73 @@ section h1{
         font-family:"Arial, Helvetica", sans-serif;
         color:#000000;
       }
-      .wrapper {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-gap: 20px;
-  background-color: #fff;
-  color: #444;
-}
 
-.box {
-  background-color:#ffffff;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}
-.box img{
-    width: 100%;
-        height: 200px;
-        margin:5px;
-        box-sizing:border-box;
-}
-.box h1{
-    color:#000;
-    font-family: Arial;
-    font-size: 30px;
-}
-     #footer {
+
+      #footer {
      position:relative;
      background:#000000;
      opacity: 0.8;
      color:white;
      float:left; 
      width:100%;
-     height:30px;
-     padding:4px;
+     height:40px;
+     padding:10px;
      text-align: center;
      box-sizing:border-box;
 }    
-@media(max-width:768px){  
-    body{
-        font-size:12px;  
-    }
-    header{
-    	width: 100%;
-    height: 120px;
-        text-align: center;  
-    }
 
-    header h1{
-        font-size:17px; 
-    }
-
-
-    header label{
-        display: block;
-        align-items: left;
-    }
-    .menu{
-        position: absolute;
-        background:#54E5F8;
-        top:120px;
-        opacity: 0.9;
-        width: 100%;
-        margin-left: 0px;
-        left: 0px;
-        transform: translateX(-100%);
-        transition: all 0.5s;
-    }
-    .menu ul{
-        flex-direction: column;
-    }
-    .menu ul li{
-
-    }
-    .menu ul li:hover ul{
-      display:all;
-        position: static;
-    }
-    .menu a span{
-        position: absolute;
-        right: 5px;
-    }
-    #btn-menu:checked ~ .menu{
-    	margin: 0px;
-        transform: translateX(0%); /*para que aparesca el menu*/
-        
-    }
-    .menu ul ul{
-        background: rgba(0,0,0,0.4);
-    }
-    .menu ul ul a{
-        padding: 15px 40px;
-    }
-    nav .menu h2{
-    	z-index: 100px;
-    }
-    .social{
-    	
-    	width: 30%;
-    }
-    header ul li{
-     list-style: none;
-    }
-    header ul li img{
-     display: none;
-     list-style: none;
-    }
-    .inicio{
-     width:100%;
-     height:300px;
-     padding: 10px;
-    }
-    .inicio h1{
-        font-size: 20px;
-        margin-top: 100px;
-    	margin-left: 30px;
-    	font-family:"Lato", sans-serif;
-    }
-    .inicio h2{
-    	font-size: 12px;
-    	margin-left:30px;
-    }
-    
-
-    .about{
-    width:100%;
-    height:650px;
-    
-     }
-     .about h1{
-        font-size:17px;
-        text-indent:0px;
-        text-align: left;
-     
-     }
-     .about h2{
-     	font-size:17px;
-     }
-
-     .about p{
-     	font-size: 17px;
-     }
-    
-    .video{
-    width:100%;
-    height:450px;
-    padding: 0px;
-        }
-
-    .active {
-    width:100%;
-    height:300px;
-    padding: 0px;
-}
-     .active:before{
-     	width:100%;
-    height:300px;
-    margin-left: 0px;
-     }
-    .active h1{
-     font-size: 25px;
-}
-.active section{
-    width:35%;
-    height:40px;
-    margin-left:100px;
-    position:relative;
-    color:black;
-    }
-   section h1{
-	font-size: 15px;
-	color: #000000;
-	z-index: 1;
-}
-
-   .active section span h1{
-   	font-size: 10px;
-   }
-
-     .hamburguer{
-    width:100%;
-    height:100px;
-}
- article{
-    width:100%;
-    height:250px;
-}
-article img{
-    width: 100%;
-    height: 200px;
-    margin-left:0px;
-}
-.row{
-    width:100%;
-    height:300px;
-}
-.group{
-    width:100%;
-    height:300px;
-   
-}
-.green{
-    width:100%;
-    height:200px;
-  
-}
-.green section{
-    width:35%;
-    height:40px;
-    margin-left:100px;
-    position:relative;
-    color:black;
-    }
-   section h1{
-	font-size: 15px;
-	color: #000000;
-	z-index: 1;
-}
-
-   .green section span h1{
-   	font-size: 10px;
-   }
-    
-img{
-	width: 30%;
-	height:80px;
-    border:#707070;
-    margin-left:5px;
-}
 .info{
-        width: 100%;
-        height: 350px;
-         box-sizing: border-box;
+        width:50%;
+        height:560px;
+        padding: 20px;
+        float:left;
+        justify-content: center;
+        text-align: center;
+        background:#339dc5;
+        box-sizing: border-box;
     }
     .info img{
-        width: 100%;
+        width: 50%;
         height: 250px;
-
     }
-   
-   #footer{
-    margin-top:200px;
-    width: 100%;
-    height: 20px;
-   }
-   .contacto{
-        width: 100%;
-        height: 500px;
+    .info h1{
+        font-size:30px; 
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      z-index: 1;
+        color:#000;
+    }
+     .text{
+        width: 50%;
+        height: 560px;
+        background:#ffffff;
         padding: 20px;
-        background:#3F60A5;
-        box-sizing: border-box;
-
+        float:left;
+        justify-content: center;
+         box-sizing: border-box;
+    }
+    
+      .text h1{
+        font-size:30px; 
+       padding: 10px;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      text-indent:60px;
+      color: #000000;
+       
+    }
+    .text h2{
+    font-size:25px; 
+     padding: 10px;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #000000;
+       
+    }
+     .text p{
+        color:#000;
+        font-size:20px; 
+       padding: 10px;
+       font-family:"Comic Sans MS", cursive, sans-serif;
+      color: #000000;
+      box-sizing: border-box;
      }
-     .contacto img{
-        width: 100%;
-        height: 200px;
-        margin-left:0px;
-     }
 
-     .wrapper {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-auto-columns: auto;
-  grid-gap: 20px;
-  background-color:#ffffff;
-  color: #000;
-}
-
-.box {
-  background-color:#ffffff;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}
-.box img{
-    width: 100%;
-        height: 200px;
-        margin:5px;
-        box-sizing:border-box;
-}
-.box h1{
-    color:#000;
-    font-family: Arial;
-    font-size: 30px;
-}
-}
-
-}
-
-
-
+    
